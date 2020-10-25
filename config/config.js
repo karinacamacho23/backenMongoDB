@@ -1,0 +1,1 @@
+module.exports.SEED = 'your-256-bit-secret';

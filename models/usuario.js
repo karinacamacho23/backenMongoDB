@@ -9,9 +9,6 @@ var Schema = mongoose.Schema; // Hacemos el llamado a la funcion esquema para cr
 //Definiendo libreria de mongoose UNIQUE
 //=====================================
 var uniqueValidator = require ('mongoose-unique-validator');
-//====================================
-//End de libreria de mongoose UNIQUE
-//=====================================
 
 
 /*Definimos la instancia Schema:

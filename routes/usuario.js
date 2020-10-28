@@ -19,10 +19,16 @@ var Usuario = require('../models/usuario');
 // =====================================
 
 app.get('/', ( req, res, next ) => {
+	var desde = req.query.desde || 0; //agregar variable des
+//al query debe ser numerico la IP quedaria
+//localhost:3000/usuario?desde=6  	-> a partir de alli me mostrara 5 elem +
+	desde = Number(desde);
 	//El Usuario.find({}) me busca toda la informacion
 	Usuario.find({ }, 'nombre email img role')
+		.skip(desde)
+		.limit(5)
 		.exec(
-			(err, usuarios) => {
+			(err, usuarios) => { 
 			if (err){
 				return res.status(500).json( {
 					ok: false,
@@ -30,10 +36,18 @@ app.get('/', ( req, res, next ) => {
 					errors: err
 				} );		
 			}
-			res.status(200).json( {
-				ok: true,
-				usuarios
-			} );
+			Usuario.count({}, (err, conteo)=>{
+
+				//revisar el err
+
+
+				res.status(200).json( {
+		 			ok: true,
+					usuarios,
+					total:conteo
+				} );
+			})
+
 	});
 
 	

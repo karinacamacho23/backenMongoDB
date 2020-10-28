@@ -16,15 +16,24 @@ const port  = 3000;
 app.use(bodyParser.urlencoded ({ extended : false }))
 app.use(bodyParser.json())
 
+/*
+ServeIndex para que en el navegador pueda visualizar las carpetas y el desplege 
+de las imagenes */
 
-
-
-
+/*var serveIndex = require('serve-index');
+app.use(express.static(__dirname + '/'))
+app.use('/upload', serveIndex(__dirname + '/upload'));
+NOI SE USARAAA*/
 //Rutas Importadas
 //
 var appRoutes = require ('./routes/app');
 var usuarioRoutes = require ('./routes/usuario');
-var loginRoutes = require('./routes/login')
+var loginRoutes = require('./routes/login');
+var hospitalRoutes = require('./routes/hospital');
+var medicoRoutes = require('./routes/medico');
+var busquedaRoutes = require('./routes/busqueda');
+var uploadRoutes = require('./routes/upload');
+var imagenesRoutes = require('./routes/imagenes');
 
 
 // Coneccion a la Base de Datos- conect with DB
@@ -44,10 +53,18 @@ mongoose.connection.openUri('mongodb://localhost:27017/hospitalDB', ( err, res )
 
 //Rutas
 //
-app.use('/usuario', usuarioRoutes);
 
-app.use('/login', loginRoutes);
-app.use('/', appRoutes); //Usando mildware
+app.use( '/usuario', usuarioRoutes );
+app.use( '/medico', medicoRoutes );
+app.use( '/hospital', hospitalRoutes );
+app.use( '/login', loginRoutes );
+app.use( '/busqueda', busquedaRoutes );
+app.use( '/upload', uploadRoutes );
+app.use( '/img', imagenesRoutes );
+
+
+//Siempre éste es de ultimo
+app.use('/', appRoutes);  //Usando mildware
 	/*Dice: 
 
 	app.use (quiero que al hacer match en / quiero que ejecutes el appRoutes)

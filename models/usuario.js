@@ -30,7 +30,8 @@ var usuarioSchema = new Schema ( {
 	email : { type: String, unique: true,  required: [true, 'El correo es necesario'] }, 
 	password : { type: String, required: [true, 'La contraseña es necesaria'] },
 	img : { type: String  }, /* o  required: false*/
-	role : { type: String, required: true, default: 'USER_ROLE', enum: rolesValidos }
+	role : { type: String, required: true, default: 'USER_ROLE', enum: rolesValidos },
+	google: { type: Boolean, default: false }//si es false es que no ha iniciado sesion con google
 } );
 //================================
 //Usando Plugins de mongoose UNIQUE

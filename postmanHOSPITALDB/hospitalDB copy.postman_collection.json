@@ -1,0 +1,755 @@
+{
+	"id": "573bc1aa-6ac8-6d49-e91d-e0be6dedbb02",
+	"name": "hospitalDB copy",
+	"description": "Creando base de datos con MongoDB",
+	"order": [
+		"048c9fc6-e500-ab54-b134-e4b14d009733",
+		"2aacd197-b7ba-47a6-d859-299114e0d6f0",
+		"1b6eb7bf-1e52-e72a-321b-c19de7252555",
+		"68ffbd54-c601-fab7-46ef-447e1b74dd43",
+		"c89207ff-6a56-d30c-bb25-36e08a97f19a",
+		"f3942399-219e-4479-4ad2-ec4e31f7c125",
+		"dbcb4785-0827-c8df-aaa0-0a4334bc4a73",
+		"c45497bd-984e-c003-8939-833adf57bcec",
+		"4ed6aa8e-0a8a-9fef-7b9e-445d6411f0fe",
+		"fa4d4cd9-9f19-4ed9-2d82-3b4c16665b34",
+		"3c618fff-b562-7d37-d771-f527fd4d72ba",
+		"7a69c703-c751-aef7-6762-e8fbd00a786f",
+		"c5282e92-357f-5874-1502-eee48911575b",
+		"fd84eb91-cdf4-e424-20dd-32008e98b8de",
+		"685f9f0d-1c3e-f3a2-bded-235751bbe830",
+		"3b0ea7ee-8417-8d4c-a8f5-fb6bd0839506",
+		"7af42947-8387-ee87-5efb-363b97a9198d",
+		"51d29e78-e610-3dff-d604-1e5b0fd4a8f5"
+	],
+	"folders": [],
+	"folders_order": [],
+	"requests": [
+		{
+			"id": "048c9fc6-e500-ab54-b134-e4b14d009733",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/usuario",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [
+				{
+					"key": "grant_type",
+					"value": "client_credentials",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "client_id",
+					"value": "d6b55734aa3f4b49af89ae8023b6c69e",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "client_secret",
+					"value": "4659ca881ead4eed81c45197f071db34",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1603554365534,
+			"name": "GetUsuarios",
+			"description": "hospitalDB",
+			"collectionId": "573bc1aa-6ac8-6d49-e91d-e0be6dedbb02",
+			"responses": [],
+			"collection_id": "573bc1aa-6ac8-6d49-e91d-e0be6dedbb02"
+		},
+		{
+			"id": "1b6eb7bf-1e52-e72a-321b-c19de7252555",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/usuario/5f943d3f9d1a3214900ef2b8?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7InJvbGUiOiJBRE1JTl9ST0xFIiwiX2lkIjoiNWY5NDNjOWQ5ZDFhMzIxNDkwMGVmMmI1Iiwibm9tYnJlIjoiS2FyaW5hIiwiZW1haWwiOiJhbmFrYXJpbmFjYW1hY2hvQGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiJDJhJDEwJC42L09mSzROR2Z4VUd1SHZGZGxkbi5DR0xxTkZNS3RnYmk0NEhHNU56NVJ6alNrSi5LWUtXIiwiaW1nIjoibnVsbCIsIl9fdiI6MH0sImlhdCI6MTYwMzU4MTEyNSwiZXhwIjoxNjAzNTgxMzY1fQ.DHFxG7dmrn0cm154vrPHfBJf0KpGbdwJKYh4oVhRcqE",
+			"queryParams": [
+				{
+					"key": "token",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7InJvbGUiOiJBRE1JTl9ST0xFIiwiX2lkIjoiNWY5NDNjOWQ5ZDFhMzIxNDkwMGVmMmI1Iiwibm9tYnJlIjoiS2FyaW5hIiwiZW1haWwiOiJhbmFrYXJpbmFjYW1hY2hvQGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiJDJhJDEwJC42L09mSzROR2Z4VUd1SHZGZGxkbi5DR0xxTkZNS3RnYmk0NEhHNU56NVJ6alNrSi5LWUtXIiwiaW1nIjoibnVsbCIsIl9fdiI6MH0sImlhdCI6MTYwMzU4MTEyNSwiZXhwIjoxNjAzNTgxMzY1fQ.DHFxG7dmrn0cm154vrPHfBJf0KpGbdwJKYh4oVhRcqE",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [
+				{
+					"key": "nombre",
+					"value": "nuevoTest",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "email",
+					"value": "texto2@texto2.com",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "role",
+					"value": "ADMIN_ROLE",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1603733492505,
+			"name": "Usuario: Actualizar Usuario",
+			"description": "",
+			"collectionId": "573bc1aa-6ac8-6d49-e91d-e0be6dedbb02",
+			"responses": [],
+			"collection_id": "573bc1aa-6ac8-6d49-e91d-e0be6dedbb02"
+		},
+		{
+			"id": "2aacd197-b7ba-47a6-d859-299114e0d6f0",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "",
+					"value": "",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/usuario?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7InJvbGUiOiJVU0VSX1JPTEUiLCJnb29nbGUiOmZhbHNlLCJfaWQiOiI1Zjk3MzkyNjBkMWRhMzFkMDBjYTBmYTciLCJub21icmUiOiJ0ZXh0bzEzIiwiZW1haWwiOiJ0ZXh0bzEzQHRleHRvMTMuY29tIiwicGFzc3dvcmQiOiIkMmEkMTAkdEpGWXJmWUJlQW4vc1NxQkVzb0VzT21lajd0YmwvLzI2dHlQclRIZGV6bVR0WHhQVTJnZnEiLCJpbWciOiJudWxsIiwiX192IjowfSwiaWF0IjoxNjA0MDIzNDkxLCJleHAiOjE2MDQwMzc4OTF9.8EF9AvRPfambrO0p1vffTNrhaRzj7arZ-RplIoQDfOU",
+			"queryParams": [
+				{
+					"key": "token",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7InJvbGUiOiJVU0VSX1JPTEUiLCJnb29nbGUiOmZhbHNlLCJfaWQiOiI1Zjk3MzkyNjBkMWRhMzFkMDBjYTBmYTciLCJub21icmUiOiJ0ZXh0bzEzIiwiZW1haWwiOiJ0ZXh0bzEzQHRleHRvMTMuY29tIiwicGFzc3dvcmQiOiIkMmEkMTAkdEpGWXJmWUJlQW4vc1NxQkVzb0VzT21lajd0YmwvLzI2dHlQclRIZGV6bVR0WHhQVTJnZnEiLCJpbWciOiJudWxsIiwiX192IjowfSwiaWF0IjoxNjA0MDIzNDkxLCJleHAiOjE2MDQwMzc4OTF9.8EF9AvRPfambrO0p1vffTNrhaRzj7arZ-RplIoQDfOU",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "nombre",
+					"value": "ana karina",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "email",
+					"value": "anakarinacamacho@gmail.com",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "123456",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "img",
+					"value": "null",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "role",
+					"value": "USER_ROLE",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1604023563847,
+			"name": "Uusario : Crear usuario",
+			"description": "",
+			"collectionId": "573bc1aa-6ac8-6d49-e91d-e0be6dedbb02",
+			"responses": [],
+			"collection_id": "573bc1aa-6ac8-6d49-e91d-e0be6dedbb02"
+		},
+		{
+			"id": "3b0ea7ee-8417-8d4c-a8f5-fb6bd0839506",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:3000/upload/medicos/5f97100fe2e8df1e0c3414b7",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [
+				{
+					"key": "imagen",
+					"value": "",
+					"description": "",
+					"type": "file",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1604022243167,
+			"name": "Cargar Archivos",
+			"description": "Cargar Archivos",
+			"collectionId": "573bc1aa-6ac8-6d49-e91d-e0be6dedbb02",
+			"responses": [],
+			"collection_id": "573bc1aa-6ac8-6d49-e91d-e0be6dedbb02"
+		},
+		{
+			"id": "3c618fff-b562-7d37-d771-f527fd4d72ba",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/medico?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7InJvbGUiOiJBRE1JTl9ST0xFIiwiX2lkIjoiNWY5NDNjOWQ5ZDFhMzIxNDkwMGVmMmI1Iiwibm9tYnJlIjoiS2FyaW5hIiwiZW1haWwiOiJhbmFrYXJpbmFjYW1hY2hvQGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiJDJhJDEwJC42L09mSzROR2Z4VUd1SHZGZGxkbi5DR0xxTkZNS3RnYmk0NEhHNU56NVJ6alNrSi5LWUtXIiwiaW1nIjoibnVsbCIsIl9fdiI6MH0sImlhdCI6MTYwMzcyOTU4MCwiZXhwIjoxNjAzNzQzOTgwfQ.6AcJhCdpAkXMdvEZifuL9nlwm7ztYQB2PDSWLMzmSlo",
+			"queryParams": [
+				{
+					"key": "token",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7InJvbGUiOiJBRE1JTl9ST0xFIiwiX2lkIjoiNWY5NDNjOWQ5ZDFhMzIxNDkwMGVmMmI1Iiwibm9tYnJlIjoiS2FyaW5hIiwiZW1haWwiOiJhbmFrYXJpbmFjYW1hY2hvQGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiJDJhJDEwJC42L09mSzROR2Z4VUd1SHZGZGxkbi5DR0xxTkZNS3RnYmk0NEhHNU56NVJ6alNrSi5LWUtXIiwiaW1nIjoibnVsbCIsIl9fdiI6MH0sImlhdCI6MTYwMzcyOTU4MCwiZXhwIjoxNjAzNzQzOTgwfQ.6AcJhCdpAkXMdvEZifuL9nlwm7ztYQB2PDSWLMzmSlo",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "nombre",
+					"value": "Freddy",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "hospital",
+					"value": "5f970b72228de91a8c6e44d1",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1604022122249,
+			"name": "Medicos: Crear Medico",
+			"description": "Medicos: Crear Medico",
+			"collectionId": "573bc1aa-6ac8-6d49-e91d-e0be6dedbb02",
+			"responses": [],
+			"collection_id": "573bc1aa-6ac8-6d49-e91d-e0be6dedbb02"
+		},
+		{
+			"id": "4ed6aa8e-0a8a-9fef-7b9e-445d6411f0fe",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/hospital/5f9703259d01c91900207291?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7InJvbGUiOiJBRE1JTl9ST0xFIiwiX2lkIjoiNWY5NDNjOWQ5ZDFhMzIxNDkwMGVmMmI1Iiwibm9tYnJlIjoiS2FyaW5hIiwiZW1haWwiOiJhbmFrYXJpbmFjYW1hY2hvQGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiJDJhJDEwJC42L09mSzROR2Z4VUd1SHZGZGxkbi5DR0xxTkZNS3RnYmk0NEhHNU56NVJ6alNrSi5LWUtXIiwiaW1nIjoibnVsbCIsIl9fdiI6MH0sImlhdCI6MTYwMzcyOTU4MCwiZXhwIjoxNjAzNzQzOTgwfQ.6AcJhCdpAkXMdvEZifuL9nlwm7ztYQB2PDSWLMzmSlo",
+			"queryParams": [
+				{
+					"key": "token",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7InJvbGUiOiJBRE1JTl9ST0xFIiwiX2lkIjoiNWY5NDNjOWQ5ZDFhMzIxNDkwMGVmMmI1Iiwibm9tYnJlIjoiS2FyaW5hIiwiZW1haWwiOiJhbmFrYXJpbmFjYW1hY2hvQGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiJDJhJDEwJC42L09mSzROR2Z4VUd1SHZGZGxkbi5DR0xxTkZNS3RnYmk0NEhHNU56NVJ6alNrSi5LWUtXIiwiaW1nIjoibnVsbCIsIl9fdiI6MH0sImlhdCI6MTYwMzcyOTU4MCwiZXhwIjoxNjAzNzQzOTgwfQ.6AcJhCdpAkXMdvEZifuL9nlwm7ztYQB2PDSWLMzmSlo",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1603735479217,
+			"name": "Hospital: Eliminar Hospital",
+			"description": "Hospital: Eliminar Hospital",
+			"collectionId": "573bc1aa-6ac8-6d49-e91d-e0be6dedbb02",
+			"responses": [],
+			"collection_id": "573bc1aa-6ac8-6d49-e91d-e0be6dedbb02"
+		},
+		{
+			"id": "51d29e78-e610-3dff-d604-1e5b0fd4a8f5",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/login/google",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "idToken",
+					"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImQwNWVmMjBjNDUxOTFlZmY2NGIyNWQzODBkNDZmZGU1NWFjMjI5ZDEiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwiYXpwIjoiNjQ3OTA3OTM1MTMwLWlqMnYybTE2MHFtdHUxc2sxYnNxcGVhZjJsNWdyZTg1LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwiYXVkIjoiNjQ3OTA3OTM1MTMwLWlqMnYybTE2MHFtdHUxc2sxYnNxcGVhZjJsNWdyZTg1LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTA2OTY4NDE0MDk1ODg1NzEyNzY1IiwiZW1haWwiOiJhbmFrYXJpbmFjYW1hY2hvQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJhdF9oYXNoIjoia3hxM1UtbGpHb1hfMi03b2xmbjZBUSIsIm5hbWUiOiJBbmEgQ2FycmlsbG8iLCJwaWN0dXJlIjoiaHR0cHM6Ly9saDUuZ29vZ2xldXNlcmNvbnRlbnQuY29tLy1CNEtKUXJoTzc5US9BQUFBQUFBQUFBSS9BQUFBQUFBQUFBQS9BTVp1dWNuSkM0cHhnLUYyb2NqTXpPTk9JZThrMExBOS1RL3M5Ni1jL3Bob3RvLmpwZyIsImdpdmVuX25hbWUiOiJBbmEiLCJmYW1pbHlfbmFtZSI6IkNhcnJpbGxvIiwibG9jYWxlIjoiZXMiLCJpYXQiOjE2MDQwMjgxNDIsImV4cCI6MTYwNDAzMTc0MiwianRpIjoiZGU2ZTBkNzBmNDYwMTFmNTMwNWFlZTkwNDQ4Y2ZmYTZmZWU2N2Y5NSJ9.LJuCCNc_23INDk3zVS0sPLshwGpdnWk1PHwvrPzOepZLnCjGN1ulufja3H2-30gMaKV0bVMRDcBsCvddrTBntd86Yl8tQFksg7RiBENghTX8PWIsFddElQr6PLnOP9SyQ99lu2w5ldks5u85Y4036Qd5KPC6L2-QDBdtqzBwwLyBwpFf037ZH2FfuqbdSMf1vg80taqev5XeVG4F4uS-HuPbPN3Yho_gk-UQxfo3YiVjFEsJPgtOAuO-R4sNXRpOjpMn39CXsJW3MJWIcD3Ycn-TP8YnLV4okL37tQ2siYjDUAGJQiwODO4obQyNWjZx7qL1zcxbVdOzSTnAMgZ5Ig",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1604028178398,
+			"name": "Login-Google",
+			"description": "Login-Google",
+			"collectionId": "573bc1aa-6ac8-6d49-e91d-e0be6dedbb02",
+			"responses": [],
+			"collection_id": "573bc1aa-6ac8-6d49-e91d-e0be6dedbb02"
+		},
+		{
+			"id": "685f9f0d-1c3e-f3a2-bded-235751bbe830",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:3000/busqueda/todo/coleccion/usuario/text",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "573bc1aa-6ac8-6d49-e91d-e0be6dedbb02",
+			"data": null,
+			"dataMode": "params",
+			"name": "Busqueda por coleccion",
+			"description": "Busqueda por coleccion",
+			"descriptionFormat": "html",
+			"time": 1603772262740,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"collection_id": "573bc1aa-6ac8-6d49-e91d-e0be6dedbb02"
+		},
+		{
+			"id": "68ffbd54-c601-fab7-46ef-447e1b74dd43",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:3000/usuario/5f9738100d1da31d00ca0f9?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7InJvbGUiOiJBRE1JTl9ST0xFIiwiX2lkIjoiNWY5NDNjOWQ5ZDFhMzIxNDkwMGVmMmI1Iiwibm9tYnJlIjoiS2FyaW5hIiwiZW1haWwiOiJhbmFrYXJpbmFjYW1hY2hvQGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiJDJhJDEwJC42L09mSzROR2Z4VUd1SHZGZGxkbi5DR0xxTkZNS3RnYmk0NEhHNU56NVJ6alNrSi5LWUtXIiwiaW1nIjoibnVsbCIsIl9fdiI6MH0sImlhdCI6MTYwMzc0NTc3NSwiZXhwIjoxNjAzNzYwMTc1fQ.FVQVF8hMdSivoXVEmQRaL3fODoZDus5DHlQ3IuKMbGM",
+			"queryParams": [
+				{
+					"key": "token",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7InJvbGUiOiJBRE1JTl9ST0xFIiwiX2lkIjoiNWY5NDNjOWQ5ZDFhMzIxNDkwMGVmMmI1Iiwibm9tYnJlIjoiS2FyaW5hIiwiZW1haWwiOiJhbmFrYXJpbmFjYW1hY2hvQGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiJDJhJDEwJC42L09mSzROR2Z4VUd1SHZGZGxkbi5DR0xxTkZNS3RnYmk0NEhHNU56NVJ6alNrSi5LWUtXIiwiaW1nIjoibnVsbCIsIl9fdiI6MH0sImlhdCI6MTYwMzc0NTc3NSwiZXhwIjoxNjAzNzYwMTc1fQ.FVQVF8hMdSivoXVEmQRaL3fODoZDus5DHlQ3IuKMbGM",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1603745941480,
+			"name": "Usuario : Eliminar",
+			"description": "Eliminar un usuario",
+			"collectionId": "573bc1aa-6ac8-6d49-e91d-e0be6dedbb02",
+			"responses": [],
+			"collection_id": "573bc1aa-6ac8-6d49-e91d-e0be6dedbb02"
+		},
+		{
+			"id": "7a69c703-c751-aef7-6762-e8fbd00a786f",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/medico/5f9707acb69ad518f4f76631?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7InJvbGUiOiJBRE1JTl9ST0xFIiwiX2lkIjoiNWY5NDNjOWQ5ZDFhMzIxNDkwMGVmMmI1Iiwibm9tYnJlIjoiS2FyaW5hIiwiZW1haWwiOiJhbmFrYXJpbmFjYW1hY2hvQGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiJDJhJDEwJC42L09mSzROR2Z4VUd1SHZGZGxkbi5DR0xxTkZNS3RnYmk0NEhHNU56NVJ6alNrSi5LWUtXIiwiaW1nIjoibnVsbCIsIl9fdiI6MH0sImlhdCI6MTYwMzcyOTU4MCwiZXhwIjoxNjAzNzQzOTgwfQ.6AcJhCdpAkXMdvEZifuL9nlwm7ztYQB2PDSWLMzmSlo",
+			"queryParams": [
+				{
+					"key": "token",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7InJvbGUiOiJBRE1JTl9ST0xFIiwiX2lkIjoiNWY5NDNjOWQ5ZDFhMzIxNDkwMGVmMmI1Iiwibm9tYnJlIjoiS2FyaW5hIiwiZW1haWwiOiJhbmFrYXJpbmFjYW1hY2hvQGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiJDJhJDEwJC42L09mSzROR2Z4VUd1SHZGZGxkbi5DR0xxTkZNS3RnYmk0NEhHNU56NVJ6alNrSi5LWUtXIiwiaW1nIjoibnVsbCIsIl9fdiI6MH0sImlhdCI6MTYwMzcyOTU4MCwiZXhwIjoxNjAzNzQzOTgwfQ.6AcJhCdpAkXMdvEZifuL9nlwm7ztYQB2PDSWLMzmSlo",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "PUT",
+			"collectionId": "573bc1aa-6ac8-6d49-e91d-e0be6dedbb02",
+			"data": [
+				{
+					"key": "nombre",
+					"value": "Ana",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "hospital",
+					"value": "5f96f9018c12d9147c69c157",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"name": "Medico: Actualizar Medico",
+			"description": "Medico: Actualizar Medico",
+			"descriptionFormat": "html",
+			"time": 1603733939941,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"collection_id": "573bc1aa-6ac8-6d49-e91d-e0be6dedbb02"
+		},
+		{
+			"id": "7af42947-8387-ee87-5efb-363b97a9198d",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:3000/img/medicos/5f97100fe2e8df1e0c3414b7-76.jpg",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1604022364991,
+			"name": "Mostrar Imagen",
+			"description": "Mostrar Imagen",
+			"collectionId": "573bc1aa-6ac8-6d49-e91d-e0be6dedbb02",
+			"responses": [],
+			"collection_id": "573bc1aa-6ac8-6d49-e91d-e0be6dedbb02"
+		},
+		{
+			"id": "c45497bd-984e-c003-8939-833adf57bcec",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "",
+					"value": "",
+					"description": "",
+					"enabled": false
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/hospital/5f96f9458c12d9147c69c158?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7InJvbGUiOiJBRE1JTl9ST0xFIiwiX2lkIjoiNWY5NDNjOWQ5ZDFhMzIxNDkwMGVmMmI1Iiwibm9tYnJlIjoiS2FyaW5hIiwiZW1haWwiOiJhbmFrYXJpbmFjYW1hY2hvQGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiJDJhJDEwJC42L09mSzROR2Z4VUd1SHZGZGxkbi5DR0xxTkZNS3RnYmk0NEhHNU56NVJ6alNrSi5LWUtXIiwiaW1nIjoibnVsbCIsIl9fdiI6MH0sImlhdCI6MTYwMzcyOTU4MCwiZXhwIjoxNjAzNzQzOTgwfQ.6AcJhCdpAkXMdvEZifuL9nlwm7ztYQB2PDSWLMzmSlo",
+			"queryParams": [
+				{
+					"key": "token",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7InJvbGUiOiJBRE1JTl9ST0xFIiwiX2lkIjoiNWY5NDNjOWQ5ZDFhMzIxNDkwMGVmMmI1Iiwibm9tYnJlIjoiS2FyaW5hIiwiZW1haWwiOiJhbmFrYXJpbmFjYW1hY2hvQGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiJDJhJDEwJC42L09mSzROR2Z4VUd1SHZGZGxkbi5DR0xxTkZNS3RnYmk0NEhHNU56NVJ6alNrSi5LWUtXIiwiaW1nIjoibnVsbCIsIl9fdiI6MH0sImlhdCI6MTYwMzcyOTU4MCwiZXhwIjoxNjAzNzQzOTgwfQ.6AcJhCdpAkXMdvEZifuL9nlwm7ztYQB2PDSWLMzmSlo",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "PUT",
+			"collectionId": "573bc1aa-6ac8-6d49-e91d-e0be6dedbb02",
+			"data": [
+				{
+					"key": "nombre",
+					"value": "Hospital del Este",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"name": "Hospital: Actualizar Hospital",
+			"description": "Hospital: Actualizar Hospital",
+			"descriptionFormat": "html",
+			"time": 1603730880249,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"collection_id": "573bc1aa-6ac8-6d49-e91d-e0be6dedbb02"
+		},
+		{
+			"id": "c5282e92-357f-5874-1502-eee48911575b",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:3000/medico/5f9707acb69ad518f4f76631?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7InJvbGUiOiJBRE1JTl9ST0xFIiwiX2lkIjoiNWY5NDNjOWQ5ZDFhMzIxNDkwMGVmMmI1Iiwibm9tYnJlIjoiS2FyaW5hIiwiZW1haWwiOiJhbmFrYXJpbmFjYW1hY2hvQGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiJDJhJDEwJC42L09mSzROR2Z4VUd1SHZGZGxkbi5DR0xxTkZNS3RnYmk0NEhHNU56NVJ6alNrSi5LWUtXIiwiaW1nIjoibnVsbCIsIl9fdiI6MH0sImlhdCI6MTYwMzcyOTU4MCwiZXhwIjoxNjAzNzQzOTgwfQ.6AcJhCdpAkXMdvEZifuL9nlwm7ztYQB2PDSWLMzmSlo",
+			"queryParams": [
+				{
+					"key": "token",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7InJvbGUiOiJBRE1JTl9ST0xFIiwiX2lkIjoiNWY5NDNjOWQ5ZDFhMzIxNDkwMGVmMmI1Iiwibm9tYnJlIjoiS2FyaW5hIiwiZW1haWwiOiJhbmFrYXJpbmFjYW1hY2hvQGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiJDJhJDEwJC42L09mSzROR2Z4VUd1SHZGZGxkbi5DR0xxTkZNS3RnYmk0NEhHNU56NVJ6alNrSi5LWUtXIiwiaW1nIjoibnVsbCIsIl9fdiI6MH0sImlhdCI6MTYwMzcyOTU4MCwiZXhwIjoxNjAzNzQzOTgwfQ.6AcJhCdpAkXMdvEZifuL9nlwm7ztYQB2PDSWLMzmSlo",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "DELETE",
+			"collectionId": "573bc1aa-6ac8-6d49-e91d-e0be6dedbb02",
+			"data": null,
+			"dataMode": "params",
+			"name": "Medico: Eliminar Medico",
+			"description": "Medico: Eliminar Medico",
+			"descriptionFormat": "html",
+			"time": 1603734137797,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"collection_id": "573bc1aa-6ac8-6d49-e91d-e0be6dedbb02"
+		},
+		{
+			"id": "c89207ff-6a56-d30c-bb25-36e08a97f19a",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/login/",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "email",
+					"value": "texto13@texto13.com",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "123456",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1604023576693,
+			"name": "Usuario: Login-Token",
+			"description": "Verifica email y passwrod sean correctos.\n\n\nModificacion de token creando un Middleware independiente y la definicion de DECODED",
+			"collectionId": "573bc1aa-6ac8-6d49-e91d-e0be6dedbb02",
+			"responses": [],
+			"collection_id": "573bc1aa-6ac8-6d49-e91d-e0be6dedbb02"
+		},
+		{
+			"id": "dbcb4785-0827-c8df-aaa0-0a4334bc4a73",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/hospital?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7InJvbGUiOiJBRE1JTl9ST0xFIiwiX2lkIjoiNWY5NDNjOWQ5ZDFhMzIxNDkwMGVmMmI1Iiwibm9tYnJlIjoiS2FyaW5hIiwiZW1haWwiOiJhbmFrYXJpbmFjYW1hY2hvQGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiJDJhJDEwJC42L09mSzROR2Z4VUd1SHZGZGxkbi5DR0xxTkZNS3RnYmk0NEhHNU56NVJ6alNrSi5LWUtXIiwiaW1nIjoibnVsbCIsIl9fdiI6MH0sImlhdCI6MTYwMzcyOTU4MCwiZXhwIjoxNjAzNzQzOTgwfQ.6AcJhCdpAkXMdvEZifuL9nlwm7ztYQB2PDSWLMzmSlo",
+			"queryParams": [
+				{
+					"key": "token",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7InJvbGUiOiJBRE1JTl9ST0xFIiwiX2lkIjoiNWY5NDNjOWQ5ZDFhMzIxNDkwMGVmMmI1Iiwibm9tYnJlIjoiS2FyaW5hIiwiZW1haWwiOiJhbmFrYXJpbmFjYW1hY2hvQGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiJDJhJDEwJC42L09mSzROR2Z4VUd1SHZGZGxkbi5DR0xxTkZNS3RnYmk0NEhHNU56NVJ6alNrSi5LWUtXIiwiaW1nIjoibnVsbCIsIl9fdiI6MH0sImlhdCI6MTYwMzcyOTU4MCwiZXhwIjoxNjAzNzQzOTgwfQ.6AcJhCdpAkXMdvEZifuL9nlwm7ztYQB2PDSWLMzmSlo",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "nombre",
+					"value": "Hospital San luis",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1604022116622,
+			"name": "Hospital: Crearun Hospital",
+			"description": "Hospital: Crearun Hospital",
+			"collectionId": "573bc1aa-6ac8-6d49-e91d-e0be6dedbb02",
+			"responses": [],
+			"collection_id": "573bc1aa-6ac8-6d49-e91d-e0be6dedbb02"
+		},
+		{
+			"id": "f3942399-219e-4479-4ad2-ec4e31f7c125",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:3000/hospital",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1603851929744,
+			"name": "Hospital: Obtener Hospitales",
+			"description": "Hospital: Obtener Hospitales",
+			"collectionId": "573bc1aa-6ac8-6d49-e91d-e0be6dedbb02",
+			"responses": [],
+			"collection_id": "573bc1aa-6ac8-6d49-e91d-e0be6dedbb02"
+		},
+		{
+			"id": "fa4d4cd9-9f19-4ed9-2d82-3b4c16665b34",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:3000/medico",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "573bc1aa-6ac8-6d49-e91d-e0be6dedbb02",
+			"data": null,
+			"dataMode": "params",
+			"name": "Medico: Obtener Medicos",
+			"description": "Medico: Obtener Medicos",
+			"descriptionFormat": "html",
+			"time": 1603731749941,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"collection_id": "573bc1aa-6ac8-6d49-e91d-e0be6dedbb02"
+		},
+		{
+			"id": "fd84eb91-cdf4-e424-20dd-32008e98b8de",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:3000/busqueda/todo/texto",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "573bc1aa-6ac8-6d49-e91d-e0be6dedbb02",
+			"data": null,
+			"dataMode": "params",
+			"name": "Busqueda General",
+			"description": "Busqueda General",
+			"descriptionFormat": "html",
+			"time": 1603768107586,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"collection_id": "573bc1aa-6ac8-6d49-e91d-e0be6dedbb02"
+		}
+	],
+	"timestamp": 1604030993301,
+	"syncedFilename": "",
+	"public": false,
+	"owner": "1841437"
+}

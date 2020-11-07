@@ -24,7 +24,7 @@ app.get('/', ( req, res, next ) => {
 //localhost:3000/usuario?desde=6  	-> a partir de alli me mostrara 5 elem +
 	desde = Number(desde);
 	//El Usuario.find({}) me busca toda la informacion
-	Usuario.find({ }, 'nombre email img role')
+	Usuario.find({ }, 'nombre email img role google')
 		.skip(desde)
 		.limit(5)
 		.exec(
@@ -97,10 +97,10 @@ app.use('/', ( req, res, next )=>{
 
 app.put('/:id', mdAutenticacion.verificaToken, (req, res) => {
 	//escuchar por param el id
-	var id = req.params.id;
+	var _id = req.params.id;
 	var body = req.body;
 	//se usa el findOne para buscar
-	Usuario.findById( id, ( err, usuario ) => {
+	Usuario.findById( _id, ( err, usuario ) => {
 		if (err){
 			return res.status(500).json( {
 				ok: false,
@@ -111,7 +111,7 @@ app.put('/:id', mdAutenticacion.verificaToken, (req, res) => {
 		if ( !usuario ) {
 			return res.status(400).json( {
 				ok: false,
-				mensaje: 'Error: no existe el usuario '+ id,
+				mensaje: 'Error: no existe el usuario '+ _id,
 				errors: { message: 'No esciste un usuario con ese ID' }
 			} );
 		}
@@ -164,9 +164,9 @@ app.put('/:id', mdAutenticacion.verificaToken, (req, res) => {
 
 
 // =====================================
-// Crear un nuevo usuario
+// Crear un nuevo usuario ##colocardespues---> , mdAutenticacion.verificaToken
 // =====================================
-app.post('/', mdAutenticacion.verificaToken , (req, res) => {
+app.post('/' , (req, res) => {
 	var body = req.body;
 	var usuario = new Usuario( {
 		nombre : body.nombre,

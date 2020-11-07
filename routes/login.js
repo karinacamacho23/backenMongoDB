@@ -47,7 +47,7 @@ async function verify(token) {
 app.post('/google', async(req, res) =>{
 
 
-	var token = req.body.idToken;
+	var token = req.body.token;
 	var usuarioGoogle = await verify(token)
 		//.then o cath porque el await al igual que el async regresa
 		//una promesa.. El await depende del async
@@ -87,9 +87,9 @@ app.post('/google', async(req, res) =>{
 
 					res.status(200).json( {
 						ok: true,
-						usuarioDB,
+						usuario: usuarioDB,
 						token,
-						id: usuarioDB._id
+						_id: usuarioDB._id
 					} );
 				} //fin If-else
 			} else {
@@ -107,9 +107,9 @@ app.post('/google', async(req, res) =>{
 					
 					res.status(200).json( {
 						ok: true,
-						usuarioDB,
+						usuario: usuarioDB,
 						token,
-						id: usuarioDB._id
+						_id: usuarioDB._id
 					} );
 				})
 
@@ -180,9 +180,9 @@ app.post('/', (req, res) =>{
 
 		res.status(200).json( {
 			ok: true,
-			usuarioDB,
+			usuario: usuarioDB,
 			token,
-			id: usuarioDB._id
+			_id: usuarioDB._id
 		} );
 		
 	});

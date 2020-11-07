@@ -88,7 +88,7 @@ app.get('/todo/coleccion/:tabla/:busqueda', ( req, res ) => {
 			});
 	}
 	promesa.then( data => {
-		res.status(200).json({
+		return res.status(200).json({
 			ok: true,
 			[tabla]: data //la tabla en corchetes es cod javascript 
 			//lo relaciona con la tabla que el usuario coloca
@@ -122,7 +122,7 @@ function buscarUsuarios ( busqueda, regex ) {
 
 	return new Promise ( ( resolve, reject ) => {
 
-		Usuario.find({}, 'nombre email role') 
+		Usuario.find({}, 'nombre email role img') 
 			.or ([ { 'nombre': regex }, { 'email': regex } ])
 			.exec ( ( err, usuarios ) =>{
 				if ( err ) {
